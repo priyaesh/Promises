@@ -1,0 +1,22 @@
+<head>
+    <body>
+        <button>
+            Click!
+        </button>
+            <script>
+                let counter= 0;
+                document.querySelector('button').addEventListener('click', ()=>{
+                    ++counter;
+                });
+                setTimeout(()=>{
+                    console.log('inside the timeout');
+                    if(counter > 5){
+                        alert("You win! Your count is"+counter);
+                    }else{
+                        alert("You lost this time :)")
+                    }
+
+                },6000);
+            </script>
+    </body>
+</head>
